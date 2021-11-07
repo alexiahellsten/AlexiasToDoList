@@ -1,0 +1,95 @@
+// MOBILE 360-1199px
+
+body {
+    width: 90%;
+    max-width: 1199px;
+    margin: 0 auto;
+    height: auto;
+    background-color: rgb(241, 236, 236);
+    color: #000;
+    font-size: 16pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h1 {
+    font-size: 2rem;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #outer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 25% 0% 25% 0%;
+        border-radius: 14px;
+        box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
+
+        #inner-container {
+            background-color: lightblue;
+            align-self: center;
+            padding: 20px;
+            border-radius: 14px;
+        }   
+    }   
+}
+
+#input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+font-size: 1.1rem;
+text-align: center;
+padding: 5px;
+margin: 5px 0;
+box-sizing: border-box;
+width: 70%;
+border: 1px solid black;
+border-radius: 4px;
+background-color: white;
+}
+
+#addToList {
+font-size: 1.1rem;
+text-align: center;
+padding: 5px;
+margin: 10px;
+box-sizing: border-box;
+width: 10%;
+border: 1px solid black;
+border-radius: 4px;
+background-color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    width: 80%;
+
+}
+
+ul li {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+    box-shadow: 0 2px 5px 0px rgba(0,0,0,0.2);
+text-align: center;
+}
+
+
+// DESKTOP 1200px
+@media screen and (min-width: 1200px) {
+}
