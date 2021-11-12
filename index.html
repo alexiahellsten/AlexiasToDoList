@@ -6,32 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  
     <script src="js/main.js"></script>
     <link href="css/main.css" rel="stylesheet">
+    
 </head>
 <body>
-<main id="wrapper">
+<main>
 
-      <div id="outer-container">
-        <div id="inner-container">
-        <h1>Today's Plan</h1>
-        <h4>What should we get done today?</h4>
-        <div id="input-div">
-        <input type="text" id="userInput" placeholder="Add new list item here">
-        <button id="addToList">+</button>
-      </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
 
-      <div class="ul-container" id="ul-container"> 
-      <ul id="ul">
-        <li>Go for a walk</li>
-        <li>Drink some coffee</li>
-        <li>Read a book</li>
-        <li>Hang out with a friend</li>
-        <li>Pet the cat</li>
-      </ul>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  
+    <script src="js/main.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<header><h1>Today's Plan</h1></header>
+ <main id="wrapper">
+  <div id="outer-container">
+    <div id="inner-container">
+                      
+    <div class="input-container">
+      <input id="inputField" type="text" placeholder="Add new list item here">
+      <button type="submit" id="addToList">
+        <i class="bi bi-plus"></i>
+        </button>
+
+  <div id="toDoContainer">
+    <ul id="toDoList">
+      <div id="staticContainer">
+        
       </div>
-      </div>
-    </div>
-    </main>
+      
+  </ul>                              
+  </div>
+
+
+</div>
+</div>
+
+</main>
+
+<!--- Footer --->
+<footer>
+  <p>Double click to remove completed tasks!</p>
+</footer>
 </body>
 </html>
