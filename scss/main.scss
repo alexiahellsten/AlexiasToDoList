@@ -1,38 +1,51 @@
-// MOBILE 360-1199px
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  max-width: 1199px;
-  margin: 0 auto;
-  padding: 0;
-  height: 0;
-  box-sizing: border-box;
+  margin: 100px;
   background-color: #eeeeee;
   color: #000;
   font-size: 16pt;
   font-family: "Jost", sans-serif;
+  max-width: 100%;
+  text-align: left;
 }
 
 h1 {
   color: #000;
   font-size: 2rem;
-  text-align: center;
-}
-
-p {
-  font-size: 0.9rem;
 }
 
 #wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-#input-container {
+.outer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.11);
+}
+
+.inner-container {
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
 }
 
 input[type="text"] {
@@ -40,39 +53,25 @@ input[type="text"] {
   font-family: "Jost", sans-serif;
   font-size: 1.1rem;
   text-align: center;
-  padding: 5px;
+  padding: 15px;
+  margin: 10px;
   border: none;
   outline: none;
   border-radius: 4px;
-  height: 20px;
-  width: 80%;
+  height: 25px;
 }
 
-
-#removeButton {
-  font-size: 1.1rem;
+label {
   text-align: center;
-  cursor: pointer;
+  margin: 10px;
   padding: 5px;
-  height: 31px;
-  width: 12%;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  background-color: #36413e;
-  color: #fff;
-
-  &:hover {
-    background-color: #fff;
-    color: #36413e;
-  }
-    }
+  border-bottom: 2px solid black;
+}
 
 #addToList {
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
-  padding: 5px;
   height: 31px;
   width: 12%;
   border: none;
@@ -87,77 +86,43 @@ input[type="text"] {
   }
 }
 
-#removeButton {
- font-size: 1.1rem;
-  text-align: center;
-  cursor: pointer;
-  padding: 2px;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  background-color: #000000;
-  color: #fff;
-
-
-  &:hover {
-    background-color: #fff;
-    color: #36413e;
-  }
-    }
-
-    
-
-#completedButton {
+.removeButton {
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
-  padding: 2px;
+  padding: 5px;
   border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  background-color: #000000;
-  color: #fff;
+  color: rgb(0, 0, 0);
+}
 
-  &:hover {
-    background-color: #fff;
-    color: #36413e;
-  }
-    }
-
-#toDoContainer {
+#toDoContainer-incompleted {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  ul {
-    list-style-type: none;
-    width: 100%;
-  }
-
-  ul li {
-    width: 80%;
-    border-radius: 4px;
-    margin-left: 0px;
-    background-color: white;
-    margin: 10px;
-    padding: 5px;
-    font-size: 1.1rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #36413e;
-      color: #fff;
-    }
-  }
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
 }
 
-footer {
-display: flex;
-justify-content: center;
-align-items: center;
+#toDoContainer-completed {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
 }
 
-// DESKTOP 1200px
-@media screen and (min-width: 1200px) {
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+ul li {
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 5px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: rgb(97, 119, 91);
+  }
 }
